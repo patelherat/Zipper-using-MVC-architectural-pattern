@@ -1,0 +1,11 @@
+help
+list data
+files
+add data/books.PNG
+add data/buttercup.JPG
+files
+archive out.zip
+list .
+unarchive out.zip temp
+list temp
+quit

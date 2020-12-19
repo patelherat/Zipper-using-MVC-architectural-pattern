@@ -1,0 +1,44 @@
+enter command >> help
+Enter one of the following commands:
+  add <file path> - adds file indicated by the path to the collection of files to archive.
+  archive <file path> - writes the collection of added files to the file indicated by the path.
+  clear - clears the current list of files to be archived.
+  files - prints the current list of files to be archived.
+  list <directory> - lists the files in the specified directory
+  quit - quits the Zipper Utility.
+  unarchive <source> <destination> - extracts the archive specified by source and saves the extracted entries in the destination directory.
+enter command >> list data
+Listing files in 'data'...
+  /Users/robertstjacquesjr/IdeaProjects/Zipper/data/books.PNG
+  /Users/robertstjacquesjr/IdeaProjects/Zipper/data/buttercup.JPG
+  /Users/robertstjacquesjr/IdeaProjects/Zipper/data/cutie.JPG
+  /Users/robertstjacquesjr/IdeaProjects/Zipper/data/tacos.jpg
+  /Users/robertstjacquesjr/IdeaProjects/Zipper/data/words.txt
+
+enter command >> files
+There are no files to be archived. Use the add command to add a file.
+enter command >> add data/books.PNG
+data/books.PNG added to list of files to be archived.
+enter command >> add data/buttercup.JPG
+data/buttercup.JPG added to list of files to be archived.
+enter command >> archive out.zip
+enter command >> list .
+Listing files in '.'...
+  /Users/robertstjacquesjr/IdeaProjects/Zipper/./.idea
+  /Users/robertstjacquesjr/IdeaProjects/Zipper/./data
+  /Users/robertstjacquesjr/IdeaProjects/Zipper/./out
+  /Users/robertstjacquesjr/IdeaProjects/Zipper/./out.zip
+  /Users/robertstjacquesjr/IdeaProjects/Zipper/./src
+  /Users/robertstjacquesjr/IdeaProjects/Zipper/./Zipper.iml
+
+enter command >> unarchive out.zip temp
+Extracting the archive 'out.zip' and saving entries in directory 'temp'...
+  /Users/robertstjacquesjr/IdeaProjects/Zipper/temp/books.PNG
+  /Users/robertstjacquesjr/IdeaProjects/Zipper/temp/buttercup.JPG
+enter command >> list temp
+Listing files in 'temp'...
+  /Users/robertstjacquesjr/IdeaProjects/Zipper/temp/books.PNG
+  /Users/robertstjacquesjr/IdeaProjects/Zipper/temp/buttercup.JPG
+
+enter command >> quit
+Quitting...

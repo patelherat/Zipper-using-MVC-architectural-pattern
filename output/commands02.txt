@@ -1,0 +1,10 @@
+help
+badcommand
+add
+add notreal.txt
+archive
+list notreal
+unarchive foo
+unarchive foo bar
+quit
+

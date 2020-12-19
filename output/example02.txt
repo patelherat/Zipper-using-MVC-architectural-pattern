@@ -1,0 +1,38 @@
+enter command >> help
+Enter one of the following commands:
+  add <file path> - adds file indicated by the path to the collection of files to archive.
+  archive <file path> - writes the collection of added files to the file indicated by the path.
+  clear - clears the current list of files to be archived.
+  files - prints the current list of files to be archived.
+  list <directory> - lists the files in the specified directory
+  quit - quits the Zipper Utility.
+  unarchive <source> <destination> - extracts the archive specified by source and saves the extracted entries in the destination directory.
+enter command >> badcommand
+Unrecognized command: badcommand
+Use 'help' to display a list of commands.
+enter command >> add
+Error processing most recent command!
+Invalid arguments.
+enter command >> add notreal.txt
+Error processing most recent command!
+File does not exist: /Users/robertstjacquesjr/IdeaProjects/Zipper/notreal.txt
+enter command >> archive foo.zip
+enter command >> archive
+Error processing most recent command!
+Invalid arguments.
+enter command >> clear
+Files to be archived cleared.
+enter command >> files
+There are no files to be archived. Use the add command to add a file.
+enter command >> list notreal
+Error processing most recent command!
+Path is not a directory: notreal
+enter command >> unarchive foo
+Error processing most recent command!
+Invalid arguments.
+enter command >> unarchive foo bar
+Extracting the archive 'foo' and saving entries in directory 'bar'...
+Error processing most recent command!
+Failed to uncompress archive!
+enter command >> quit
+Quitting...
